@@ -1,0 +1,7 @@
+host: '127.0.0.1'
+port: 8080
+namespace: '9e4c329e-24f7-4990-9408-eda12b43fb14'
+user: 'nacos'
+password: 'nacos'
+dataid: 'inventory.json'
+group: 'dev'
