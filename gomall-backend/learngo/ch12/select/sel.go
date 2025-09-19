@@ -8,12 +8,12 @@ import (
 //很多时候我并不会多个goroutine写同一个 channel
 
 func g1(ch chan struct{}) {
-	time.Sleep(2*time.Second)
+	time.Sleep(4 * time.Second)
 	ch <- struct{}{}
 }
 
 func g2(ch chan struct{}) {
-	time.Sleep(3*time.Second)
+	time.Sleep(3 * time.Second)
 	ch <- struct{}{}
 }
 
@@ -32,14 +32,14 @@ func main() {
 	//我要监控多个channel， 任何一个channel返回都知道
 	// 1. 某一个分支就绪了就执行该分支 2. 如果两个都就绪了，先执行哪个， 随机的, 目的是什么： 防止饥饿
 	// 应用场景
-	timer := time.NewTimer(5*time.Second)
+	timer := time.NewTimer(5 * time.Second)
 	for {
 		select {
-		case <- g1Channel:
+		case <-g1Channel:
 			fmt.Println("g1 done")
-		case <- g2Channel:
+		case <-g2Channel:
 			fmt.Println("g2 done")
-		case <- timer.C:
+		case <-timer.C:
 			fmt.Println("timeout")
 			return
 		}
