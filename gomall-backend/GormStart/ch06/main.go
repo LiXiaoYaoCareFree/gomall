@@ -100,7 +100,7 @@ func main() {
 		OrderSn:      GenerateOrderSn(1),
 		OrderMount:   44.2,
 		Address:      "北京市",
-		SignerName:   "bobby",
+		SignerName:   "lly",
 		SingerMobile: "18787878787",
 		Post:         "请尽快发货",
 	}

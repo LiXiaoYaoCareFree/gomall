@@ -47,7 +47,7 @@ func main() {
 	} //新建了user表和company表，并设置了外键
 
 	db.Create(&User{
-		Name: "bobby",
+		Name: "lly",
 		Company: Company{
 			Name: "慕课网",
 		},
