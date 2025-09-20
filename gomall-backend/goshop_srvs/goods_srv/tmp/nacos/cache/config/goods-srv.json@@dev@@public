@@ -1,0 +1,23 @@
+{
+  "name": "goods-srv",
+  "host":"192.168.179.139",
+  "tags":["imooc", "bobby", "goods-srv","srv"],
+  "mysql": {
+    "host": "127.0.0.1",
+    "port": 3306,
+    "user": "root",
+    "password": "root",
+    "name": "mxshop_goods_srv"
+  },
+  "consul": {
+    "host": "192.168.179.139",
+    "port": 8500
+  },
+  "es": {
+    "host": "192.168.179.139",
+    "port": 9200
+  },
+  "grpc":{
+    "ip":"127.0.0.1"
+  }
+}
