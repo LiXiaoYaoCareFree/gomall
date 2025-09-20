@@ -1,0 +1,20 @@
+{
+  "name": "userop-srv",
+  "host":"192.168.179.139",
+  "tags":["imooc", "bobby", "userop-srv","srv"],
+  "des":"用户中心服务",
+  "mysql": {
+    "host": "127.0.0.1",
+    "port": 3306,
+    "user": "root",
+    "password": "root",
+    "name": "mxshop_userop_srv"
+  },
+  "consul": {
+    "host": "192.168.179.139",
+    "port": 8500
+  },
+  "grpc":{
+    "ip":"127.0.0.1"
+  }
+}
